@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+ 	<!-- standalone list -->
+ 
+ 	<util:list list-class="java.util.LinkedList" id="friends">
+ 		<value>Rajat</value>
+ 		<value>Sonali</value>
+ 		<value>Ajay</value>
+ 		<value>Raman</value>
+ 	</util:list>
+ 	
+ 	<!-- standalone set -->
+ 	
+ 	<util:set set-class="java.util.LinkedHashSet" id="cities">
+ 		<value>Kolkata</value>
+ 		<value>Durgapur</value>
+ 		<value>Gurgaon</value>
+ 	</util:set>
+ 	
+ 	<!-- standalone map -->
+ 	
+ 	<util:map map-class="java.util.HashMap" id="fees">
+ 		<entry key="Spring Framework" value="10000"/>
+ 		<entry key="Django Framework" value="10000"/>
+ 		<entry key="Hibernate Framework" value="5000"/>
+ 		<entry key="DotNet Framework" value="9000"/>
+ 	</util:map>
+ 	
+ 	<!-- standalone properties -->
+ 	
+ 	<util:properties id="dbproperties">
+ 		<prop key="url">http://localhost:3306</prop>
+ 		<prop key="driver">com.jdbc.driver</prop>
+ 		<prop key="username">sayan</prop>
+ 		<prop key="password">password</prop>
+ 	</util:properties>
+
+	<bean class="com.springcore.stanalone.collections.Person" name="person1">
+		<property name="friendList" ref="friends"/>
+		<property name="cities" ref="cities"/>
+		<property name="feeStructure" ref="fees"/>
+		<property name="properties" ref="dbproperties"></property>
+	</bean>
+
+
+</beans>

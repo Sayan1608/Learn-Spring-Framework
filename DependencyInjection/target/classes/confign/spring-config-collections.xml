@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.springcore.collections.Employee" name="emp1" p:employeeName="Sayan Sengupta">
+		<property name="phoneNumbers">
+			<list>
+				<value>216414168</value>
+				<value>549595955</value>
+				<value>79565696454</value>
+				<value>6258655465</value>
+			</list>
+		</property>
+		
+		<property name="cities">
+			<set>
+				<value>Kolkata</value>
+				<value>Hyderabad</value>
+				<value>Gurugram</value>
+				<value>Delhi</value>
+			</set>
+		</property>
+		
+		<property name="courses">
+			<map>
+				<entry key="JAVA" value="4 months"></entry>
+				<entry key="Spring" value="5 months"></entry>
+				<entry key="DBMS" value="2 months"></entry>
+			</map>
+		</property>
+	</bean>
+
+
+</beans>

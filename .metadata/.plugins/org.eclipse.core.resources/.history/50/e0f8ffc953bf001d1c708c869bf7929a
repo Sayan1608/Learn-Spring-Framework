@@ -1,0 +1,8 @@
+package com.springcore.javaconfig;
+
+
+public class Manager {
+	private int id;
+	private String name;
+	private Employee[] employees;
+}

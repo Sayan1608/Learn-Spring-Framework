@@ -1,0 +1,5 @@
+package com.springcore.javaconfig;
+
+public class JavaConfiguration {
+
+}

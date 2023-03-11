@@ -1,0 +1,9 @@
+package com.springcore.stereotype.annotations;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

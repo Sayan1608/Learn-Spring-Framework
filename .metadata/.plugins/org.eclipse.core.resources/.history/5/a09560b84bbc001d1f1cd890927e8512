@@ -1,0 +1,25 @@
+package com.springcore.stanalone.collections;
+
+import java.util.List;
+import java.util.Set;
+
+public class Person {
+	private List<String> friendList;
+	private Set<String> cities;
+
+	public List<String> getFriendList() {
+		return friendList;
+	}
+
+	public void setFriendList(List<String> friendList) {
+		this.friendList = friendList;
+	}
+
+	public Set<String> getCities() {
+		return cities;
+	}
+
+	public void setCities(Set<String> cities) {
+		this.cities = cities;
+	}
+}

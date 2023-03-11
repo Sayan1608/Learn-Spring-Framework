@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Address Beans -->
+
+	<bean class="com.springcore.constructorinjection.Address"
+		name="address1" c:street="Stree1" c:city="City1" c:state="State1"
+		c:country="Country1" />
+		
+		<!-- Person Beans -->
+
+	<bean class="com.springcore.constructorinjection.Person"
+		name="person1">
+		<constructor-arg value="101" />
+		<constructor-arg value="Sayan" />
+		<constructor-arg>
+			<list>
+				<value>146546164</value>
+				<value>9941465614546</value>
+				<value>58646646646</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg ref="address1"/>
+	</bean>
+
+
+</beans>
