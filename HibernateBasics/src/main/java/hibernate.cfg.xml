@@ -11,7 +11,13 @@
 		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
+		
 		<mapping class="com.hibernate.entity.Student"/>
+		<mapping class="com.hibernate.entity.Address"/>
+		<mapping class="com.hibernate.mappings.OneToOne.Question"/>
+		<mapping class="com.hibernate.mappings.OneToOne.Answer"/>
+		<mapping class="com.hibernate.mappings.OneToMany.Question"/>
+		<mapping class="com.hibernate.mappings.OneToMany.Answer"/>
 		
 	</session-factory>
 

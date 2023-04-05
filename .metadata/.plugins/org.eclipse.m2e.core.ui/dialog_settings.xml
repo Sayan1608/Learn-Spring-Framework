@@ -25,14 +25,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.hibernate.HibernateBasics"/>
 			<item value="com.spring.jdbc"/>
 			<item value="com.springcore"/>
 		</list>
 		<list key="groupId">
+			<item value="com.hibernate"/>
 			<item value="com.spring.jdbc"/>
 			<item value="com.springcore"/>
 		</list>
 		<list key="artifactId">
+			<item value="HibernateBasics"/>
 			<item value="SpringJdbc"/>
 			<item value="DependencyInjection"/>
 		</list>

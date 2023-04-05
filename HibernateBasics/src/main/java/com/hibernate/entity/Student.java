@@ -8,6 +8,7 @@ public class Student {
 	private int id;
 	private String name;
 	private String city;
+	private Certificate certificate;
 
 	public Student(int id, String name, String city) {
 		super();
@@ -39,6 +40,14 @@ public class Student {
 
 	public String getCity() {
 		return city;
+	}
+
+	public Certificate getCertificate() {
+		return certificate;
+	}
+
+	public void setCertificate(Certificate certificate) {
+		this.certificate = certificate;
 	}
 
 	public void setCity(String city) {
