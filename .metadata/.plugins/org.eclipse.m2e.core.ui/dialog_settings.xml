@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\spring_workspace\HibernateBasics\src\main\java\com\hibernate\mappings\OneToMany\OneToManyDemo.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -30,11 +31,13 @@
 			<item value="com.springcore"/>
 		</list>
 		<list key="groupId">
+			<item value="com.hibernate.OneToMany"/>
 			<item value="com.hibernate"/>
 			<item value="com.spring.jdbc"/>
 			<item value="com.springcore"/>
 		</list>
 		<list key="artifactId">
+			<item value="OneToMany"/>
 			<item value="HibernateBasics"/>
 			<item value="SpringJdbc"/>
 			<item value="DependencyInjection"/>
